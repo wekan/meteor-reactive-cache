@@ -1,5 +1,13 @@
 #!/bin/bash
 
+## 1. Copy files
+
+npm run prepublish
+
+npm run copy
+
+## 2. Commit
+
 git add --all
 
 git commit -m "$1"
