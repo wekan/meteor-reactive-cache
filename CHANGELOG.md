@@ -1,5 +1,13 @@
 # ChangeLog
 
+# v1.0.4 2023-07-19 meteor-reactive-cache release
+
+This release adds the following updates:
+
+- [
+
+Thanks to above GitHub users for their contributions and translators for their translations.
+
 # v1.0.3 2023-07-19 meteor-reactive-cache release
 
 This release adds the following updates:
