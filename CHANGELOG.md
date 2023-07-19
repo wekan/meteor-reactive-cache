@@ -1,5 +1,16 @@
 # ChangeLog
 
+# v1.0.5 2023-07-19 meteor-reactive-cache release
+
+This release fixes the following bugs:
+
+- [Fixed using newer fixed @wekanteam/meteor-globals package](https://github.com/wekan/meteor-reactive-cache/commit/1fe7a07c8607419c86bceabce5ca024432435fc2).
+  Thanks to xet7.
+- [Renamed publish to release. Added release script](https://github.com/wekan/meteor-reactive-cache/commit/e43c232453c0d7267576c82c6f6463ede34a2c55).
+  Thanks to xet7.
+
+Thanks to above GitHub users for their contributions and translators for their translations.
+
 # v1.0.4 2023-07-19 meteor-reactive-cache release
 
 This release fixes the following bugs:
