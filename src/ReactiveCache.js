@@ -7,10 +7,12 @@ export default class ReactiveCache {
     this.values = {};
     this.deps = {};
   }
+
   ensureDependency(key) {
     if (!this.deps[key]) this.deps[key] = new Tracker.Dependency();
     return this.deps[key];
   }
+
   checkDeletion(key) {
     const dep = this.ensureDependency(key);
     if (dep.hasDependents()) return false;
@@ -18,15 +20,18 @@ export default class ReactiveCache {
     delete this.deps[key];
     return true;
   }
+
   clear() {
-    Object.keys(this.values).forEach(key => this.del(key));
+    Object.keys(this.values).forEach((key) => this.del(key));
   }
+
   del(key) {
     const dep = this.ensureDependency(key);
     delete this.values[key];
     if (this.checkDeletion(key)) return;
     dep.changed();
   }
+
   set(key, data, bypassCompare) {
     const dep = this.ensureDependency(key);
     const current = this.values[key];
@@ -35,6 +40,7 @@ export default class ReactiveCache {
       dep.changed();
     }
   }
+
   get(key) {
     const data = this.values[key];
     if (Tracker.currentComputation) {

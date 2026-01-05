@@ -1,34 +1,27 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _DataCache = require('./DataCache');
-
-Object.defineProperty(exports, 'DataCache', {
+Object.defineProperty(exports, "DataCache", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_DataCache).default;
+    return _DataCache["default"];
   }
 });
-
-var _ReactiveCache = require('./ReactiveCache');
-
-Object.defineProperty(exports, 'ReactiveCache', {
+Object.defineProperty(exports, "ReactiveCache", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ReactiveCache).default;
+    return _ReactiveCache["default"];
   }
 });
-
-var _reactiveField = require('./reactiveField');
-
-Object.defineProperty(exports, 'reactiveField', {
+Object.defineProperty(exports, "reactiveField", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_reactiveField).default;
+    return _reactiveField["default"];
   }
 });
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _DataCache = _interopRequireDefault(require("./DataCache"));
+var _ReactiveCache = _interopRequireDefault(require("./ReactiveCache"));
+var _reactiveField = _interopRequireDefault(require("./reactiveField"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
