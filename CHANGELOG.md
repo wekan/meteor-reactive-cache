@@ -1,7 +1,5 @@
 # ChangeLog
 
-20d9fe9ea8b538e8e6a7010b4dbc503828931677
-
 # v1.0.9 2026-10-10 meteor-reactive-cache release
 
 This release adds the following updates:
